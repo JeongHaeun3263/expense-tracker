@@ -1,0 +1,33 @@
+.topfold {
+	margin: 2.4rem auto;
+}
+
+.home__topfold,
+.add__topfold {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.searchbar {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.searchbar,
+.searchbar input {
+	font-size: 2rem;
+	width: 100%;
+	background: #eee;
+	padding: 0.6rem 1.2rem;
+	border-radius: 11px;
+}
+
+.btn {
+	font-size: 2rem;
+	cursor: pointer;
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
