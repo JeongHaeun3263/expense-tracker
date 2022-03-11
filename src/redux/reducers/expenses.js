@@ -15,12 +15,16 @@ const initialExpenseList = () => {
 
 const getTotalAmount = () => {
 	const list = localStorage.getItem('expense-list');
-	let amountList = [];
-	if (list) {
-		amountList = JSON.parse(list).map((item) => item.amount);
+
+	if (list === []) {
+		return 0;
 	}
-	const total = amountList.reduce((prev, curr) => prev + curr);
-	return Math.round(total * 100) / 100;
+
+	if (list) {
+		const amountList = JSON.parse(list).map((item) => item.amount);
+		const total = amountList.reduce((prev, curr) => prev + curr);
+		return Math.round(total * 100) / 100;
+	}
 };
 
 const initialState = {

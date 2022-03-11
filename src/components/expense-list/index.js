@@ -4,8 +4,6 @@ import Card from '../card';
 import './expense-list.css';
 
 const ExpenseList = () => {
-	const [totalAmount, setTotalAmount] = useState();
-
 	const {
 		expenseList: list,
 		query,
@@ -13,10 +11,6 @@ const ExpenseList = () => {
 	} = useSelector((state) => state.expenses);
 
 	const filteredList = list.filter((item) => item.title.includes(query));
-
-	useEffect(() => {
-		setTotalAmount(totalAmount);
-	}, [total]);
 
 	return (
 		<div className='expense-list'>

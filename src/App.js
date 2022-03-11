@@ -8,11 +8,11 @@ import './App.css';
 function App() {
 	return (
 		<div className='app'>
-			<BrowserRouter>
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
 				<Header />
 				<Routes>
 					<Route path='/' exact element={<Home />} />
-					<Route path='/add-expense' element={<AddExpense />} />
+					<Route path='/add-expense' exact element={<AddExpense />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>

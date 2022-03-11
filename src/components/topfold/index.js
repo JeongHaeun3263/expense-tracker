@@ -16,7 +16,7 @@ const TopFold = () => {
 
 	return (
 		<div className='topfold'>
-			{window.location.pathname === '/' ? (
+			{window.location.pathname === '/expense-tracker/' ? (
 				<div className='home__topfold'>
 					<div className='searchbar'>
 						<FaSearch />
