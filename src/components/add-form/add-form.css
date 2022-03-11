@@ -38,3 +38,18 @@
 .form-add-btn {
 	justify-content: flex-end;
 }
+
+.category {
+	display: flex;
+	flex-direction: column;
+}
+.category-container {
+	max-width: 300px;
+}
+
+.category-item {
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

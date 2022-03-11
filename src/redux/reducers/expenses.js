@@ -13,22 +13,9 @@ const initialExpenseList = () => {
 	return expenses;
 };
 
-// const getTotalAmount = () => {
-// 	const list = localStorage.getItem('expense-list');
-
-// 	if (list === []) {
-// 		return 0;
-// 	} else {
-// 		const amountList = JSON.parse(list).map((item) => item.amount);
-// 		const total = amountList.reduce((prev, curr) => prev + curr);
-// 		return Math.round(total * 100) / 100;
-// 	}
-// };
-
 const initialState = {
 	expenseList: initialExpenseList(),
 	query: '',
-	// total: getTotalAmount(),
 };
 
 export const expenseReducer = (state = initialState, action) => {

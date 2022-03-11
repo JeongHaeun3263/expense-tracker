@@ -4,17 +4,12 @@
 	gap: 10px;
 }
 
-.category {
-	display: flex;
-	flex-direction: column;
-}
-.category-container {
-	max-width: 300px;
+.expense-list__total,
+.expense-list__alert {
+	font-size: 2rem;
 }
 
-.category-item {
-	padding: 1rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.expense-list__alert {
+	text-decoration: underline;
+	text-align: center;
 }
